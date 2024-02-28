@@ -23,11 +23,11 @@ public class CustomerInformation {
     private List<String> accountNumbers;
 
     public CustomerInformation(String tableRow) {
-        List<String> cells = Arrays.asList(tableRow.split("\n"));
-        this.firstName = cells.get(1).trim();
-        this.lastName = cells.get(2).trim();
-        this.postCode = cells.get(3).trim();
-        String accounts = cells.get(4).trim();
+        List<String> cells = Arrays.asList(tableRow.split("\t"));
+        this.firstName = cells.get(0).trim();
+        this.lastName = cells.get(1).trim();
+        this.postCode = cells.get(2).trim();
+        String accounts = cells.get(3).trim();
         if (isEmpty(accounts)) {
             this.accountNumbers = null;
         } else {

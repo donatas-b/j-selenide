@@ -14,31 +14,31 @@ Feature: Bank Manager functionality
     And Customer should appear in Customer List
 
 
-#  Scenario: Manager can Open Account for Customer
-#    Given there is a Customer
-#    When Manager opens "Dollar" Account for Customer
-#    Then Customer Account should appear in Customer List
-#
-#
-#  Scenario: Manager can Search Customers
-#    Given there is a Customer
-#    When Manager does Search for Customer
-#    Then Customer should appear in Customer List
-#    And Customer List should contain 1 Customer
-#
-#
-#  Scenario Outline: Manager can Sort Customers
-#    Given there is a Customer
-#    When Manager Sorts Customer List by "<column>" in "<sortOrder>" order
-#    Then Customer list should be sorted by "<column>" in "<sortOrder>" order
-#    Examples:
-#      | column     | sortOrder  |
-#      | First Name | Ascending  |
-#      | Post Code  | Descending |
-#
-#
-#  Scenario: Manager can Delete Customer
-#    Given there is a Customer
-#    And Customer appears in Customer List
-#    When Manager deletes the Customer
-#    Then Customer should no longer appear in Customer List
+  Scenario: Manager can Open Account for Customer
+    Given there is a Customer
+    When Manager opens "Dollar" Account for Customer
+    Then Customer Account should appear in Customer List
+
+
+  Scenario: Manager can Search Customers
+    Given there is a Customer
+    When Manager does Search for Customer
+    Then Customer should appear in Customer List
+    And Customer List should contain 1 Customer
+
+
+  Scenario Outline: Manager can Sort Customers
+    Given there is a Customer
+    When Manager Sorts Customer List by "<column>" in "<sortOrder>" order
+    Then Customer list should be sorted by "<column>" in "<sortOrder>" order
+    Examples:
+      | column     | sortOrder  |
+      | First Name | Ascending  |
+      | Post Code  | Descending |
+
+
+  Scenario: Manager can Delete Customer
+    Given there is a Customer
+    And Customer appears in Customer List
+    When Manager deletes the Customer
+    Then Customer should no longer appear in Customer List

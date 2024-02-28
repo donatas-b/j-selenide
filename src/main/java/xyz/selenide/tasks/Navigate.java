@@ -14,14 +14,14 @@ public class Navigate {
         ManagerHomePage managerHomePage = new ManagerHomePage();
         managerHomePage.getBtnAddCustomer().click();
     }
-//
-//    public static void toOpenAccount(Page page) {
-//        ManagerHomePage managerHomePage = new ManagerHomePage(page);
-//        managerHomePage.getBtnOpenAccount().click();
-//    }
-//
-//    public static void toCustomers(Page page) {
-//        ManagerHomePage managerHomePage = new ManagerHomePage(page);
-//        managerHomePage.getBtnCustomers().click();
-//    }
+
+    public static void toOpenAccount() {
+        ManagerHomePage managerHomePage = new ManagerHomePage();
+        managerHomePage.getBtnOpenAccount().click();
+    }
+
+    public static void toCustomers() {
+        ManagerHomePage managerHomePage = new ManagerHomePage();
+        managerHomePage.getBtnCustomers().click();
+    }
 }
