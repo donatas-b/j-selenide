@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Wed Feb 28 14:58:27 GMT 2024","Wed Feb 28 14:58:28 GMT 2024","267","Surefire suite","Surefire test","xyz.selenide.Tests","xyz.selenide.Tests","runScenario","Runs Cucumber Scenarios",""
+"broken","Wed Feb 28 14:58:27 GMT 2024","Wed Feb 28 14:58:27 GMT 2024","320","Surefire suite","Surefire test","xyz.selenide.Tests","xyz.selenide.Tests","runScenario","Runs Cucumber Scenarios",""
+"broken","Wed Feb 28 14:58:28 GMT 2024","Wed Feb 28 14:58:28 GMT 2024","263","Surefire suite","Surefire test","xyz.selenide.Tests","xyz.selenide.Tests","runScenario","Runs Cucumber Scenarios",""
+"broken","Wed Feb 28 14:58:28 GMT 2024","Wed Feb 28 14:58:28 GMT 2024","262","Surefire suite","Surefire test","xyz.selenide.Tests","xyz.selenide.Tests","runScenario","Runs Cucumber Scenarios",""
+"broken","Wed Feb 28 14:58:26 GMT 2024","Wed Feb 28 14:58:27 GMT 2024","1483","Surefire suite","Surefire test","xyz.selenide.Tests","xyz.selenide.Tests","runScenario","Runs Cucumber Scenarios",""
