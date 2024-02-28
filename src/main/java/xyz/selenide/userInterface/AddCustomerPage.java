@@ -3,7 +3,8 @@ package xyz.selenide.userInterface;
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
 
-import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selectors.by;
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 
 @Getter
