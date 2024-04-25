@@ -10,7 +10,6 @@ import xyz.selenide.userInterface.CustomersPage;
 import xyz.selenide.userInterface.OpenAccountPage;
 
 import static com.codeborne.selenide.Selenide.switchTo;
-import static org.apache.commons.lang3.StringUtils.isEmpty;
 
 public class Manager {
 
@@ -31,11 +30,10 @@ public class Manager {
 
     public static boolean areCustomerFieldsCleared() {
         AddCustomerPage addCustomerPage = new AddCustomerPage();
-        String firstName = addCustomerPage.getInputFirstName().getText();
-        String lastName = addCustomerPage.getInputLastName().getText();
-        String postCode = addCustomerPage.getInputPostCode().getText();
-
-        return isEmpty(firstName) && isEmpty(lastName) && isEmpty(postCode);
+        boolean firstName = addCustomerPage.getInputFirstName().has(Condition.empty);
+        boolean lastName = addCustomerPage.getInputLastName().has(Condition.empty);
+        boolean postCode = addCustomerPage.getInputPostCode().has(Condition.empty);
+        return firstName && lastName && postCode;
     }
 
     public static boolean isCustomerInTheList(CustomerInformation customerInformation) {
